@@ -1,8 +1,9 @@
 package com.epam.rd.autocode.observer.git;
 
+import java.beans.PropertyChangeListener;
 import java.util.List;
 
-public interface WebHook {
+public interface WebHook  {
     String branch();
     Event.Type type();
     List<Event> caughtEvents();
